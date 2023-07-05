@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		97EA5A062A4C826A00060705 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EA5A052A4C826A00060705 /* AppDelegate.swift */; };
 		97EA5A082A4C826A00060705 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EA5A072A4C826A00060705 /* SceneDelegate.swift */; };
-		97EA5A0A2A4C826A00060705 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EA5A092A4C826A00060705 /* ViewController.swift */; };
 		97EA5A0D2A4C826A00060705 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97EA5A0B2A4C826A00060705 /* Main.storyboard */; };
 		97EA5A0F2A4C826B00060705 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97EA5A0E2A4C826B00060705 /* Assets.xcassets */; };
 		97EA5A122A4C826B00060705 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97EA5A102A4C826B00060705 /* LaunchScreen.storyboard */; };
+		97EA5A1A2A4C82A500060705 /* HaberlerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EA5A192A4C82A500060705 /* HaberlerViewController.swift */; };
+		97EA5A1C2A4C85B400060705 /* HaberlerDataSourceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EA5A1B2A4C85B400060705 /* HaberlerDataSourceDelegate.swift */; };
+		97EA5A1E2A4C862C00060705 /* HaberlerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EA5A1D2A4C862C00060705 /* HaberlerTableViewCell.swift */; };
+		97EA5A202A4C863D00060705 /* haberModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EA5A1F2A4C863D00060705 /* haberModel.swift */; };
+		97EA5A222A4C878800060705 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EA5A212A4C878800060705 /* DetailsViewController.swift */; };
+		97EA5A242A4C88BE00060705 /* HaberlerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EA5A232A4C88BE00060705 /* HaberlerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		97EA5A022A4C826A00060705 /* haberler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = haberler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97EA5A052A4C826A00060705 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97EA5A072A4C826A00060705 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		97EA5A092A4C826A00060705 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		97EA5A0C2A4C826A00060705 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		97EA5A0E2A4C826B00060705 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97EA5A112A4C826B00060705 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97EA5A132A4C826B00060705 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97EA5A192A4C82A500060705 /* HaberlerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaberlerViewController.swift; sourceTree = "<group>"; };
+		97EA5A1B2A4C85B400060705 /* HaberlerDataSourceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaberlerDataSourceDelegate.swift; sourceTree = "<group>"; };
+		97EA5A1D2A4C862C00060705 /* HaberlerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaberlerTableViewCell.swift; sourceTree = "<group>"; };
+		97EA5A1F2A4C863D00060705 /* haberModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = haberModel.swift; sourceTree = "<group>"; };
+		97EA5A212A4C878800060705 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		97EA5A232A4C88BE00060705 /* HaberlerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaberlerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,52 @@
 		97EA5A042A4C826A00060705 /* haberler */ = {
 			isa = PBXGroup;
 			children = (
+				97EA5A132A4C826B00060705 /* Info.plist */,
+				97EA5A2A2A4CC1E300060705 /* Other */,
+				97EA5A272A4CC17F00060705 /* ViewModels */,
+				97EA5A282A4CC19000060705 /* Models */,
+				97EA5A292A4CC1AE00060705 /* Views */,
+			);
+			path = haberler;
+			sourceTree = "<group>";
+		};
+		97EA5A272A4CC17F00060705 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				97EA5A232A4C88BE00060705 /* HaberlerViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		97EA5A282A4CC19000060705 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				97EA5A1F2A4C863D00060705 /* haberModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		97EA5A292A4CC1AE00060705 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				97EA5A212A4C878800060705 /* DetailsViewController.swift */,
+				97EA5A192A4C82A500060705 /* HaberlerViewController.swift */,
+				97EA5A1B2A4C85B400060705 /* HaberlerDataSourceDelegate.swift */,
+				97EA5A1D2A4C862C00060705 /* HaberlerTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		97EA5A2A2A4CC1E300060705 /* Other */ = {
+			isa = PBXGroup;
+			children = (
 				97EA5A052A4C826A00060705 /* AppDelegate.swift */,
 				97EA5A072A4C826A00060705 /* SceneDelegate.swift */,
-				97EA5A092A4C826A00060705 /* ViewController.swift */,
 				97EA5A0B2A4C826A00060705 /* Main.storyboard */,
 				97EA5A0E2A4C826B00060705 /* Assets.xcassets */,
 				97EA5A102A4C826B00060705 /* LaunchScreen.storyboard */,
-				97EA5A132A4C826B00060705 /* Info.plist */,
 			);
-			path = haberler;
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +185,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97EA5A0A2A4C826A00060705 /* ViewController.swift in Sources */,
+				97EA5A242A4C88BE00060705 /* HaberlerViewModel.swift in Sources */,
 				97EA5A062A4C826A00060705 /* AppDelegate.swift in Sources */,
+				97EA5A1E2A4C862C00060705 /* HaberlerTableViewCell.swift in Sources */,
+				97EA5A222A4C878800060705 /* DetailsViewController.swift in Sources */,
 				97EA5A082A4C826A00060705 /* SceneDelegate.swift in Sources */,
+				97EA5A1C2A4C85B400060705 /* HaberlerDataSourceDelegate.swift in Sources */,
+				97EA5A1A2A4C82A500060705 /* HaberlerViewController.swift in Sources */,
+				97EA5A202A4C863D00060705 /* haberModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
