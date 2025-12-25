@@ -9,7 +9,7 @@ import UIKit
 import AVKit
 
 
-final class DetailsViewController: UIViewController {
+class DetailsViewController: UIViewController {
 
     @IBOutlet weak var haberImg: UIImageView!
     @IBOutlet weak var descriptionLabel: UILabel!
